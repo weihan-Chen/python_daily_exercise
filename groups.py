@@ -35,4 +35,11 @@ while cnt <= people_summary:
     cnt += 1
 # 输出结果
 print('每组人数', summary[0])
-print('每个人所在的组', str(people_group))
+i = 1
+while i <= group_summary:
+    print('第{}组:'.format(i))
+    for group in people_group.values():
+        if group == i:
+            print(list(people_group.keys())[list(people_group.values()).index(group)], end=', ')
+            people_group[list(people_group.keys())[list(people_group.values()).index(group)]] = 0
+    i += 1
