@@ -42,4 +42,5 @@ while i <= group_summary:
         if group == i:
             print(list(people_group.keys())[list(people_group.values()).index(group)], end=', ')
             people_group[list(people_group.keys())[list(people_group.values()).index(group)]] = 0
+    print('\n')
     i += 1
