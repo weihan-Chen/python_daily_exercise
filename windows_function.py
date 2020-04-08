@@ -1,3 +1,4 @@
+# 窗函数
 import numpy as np
 # import scipy.signal as sp
 import matplotlib.pyplot as plt
