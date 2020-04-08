@@ -3,8 +3,8 @@
 s = open('/tmp/Strings.txt')
 words = s.read()
 s.close
-digits = {,}
+digits = ''
 for word in words:
     if word.isdigit():
-        digits.append(word)
+        digits += word
 print(digits)
