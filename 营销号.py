@@ -1,7 +1,24 @@
 # 输出营销号文章
-main_body = input('主体：')
-event = input('事件：')
-in_fact = input('其实：')
-print('''南京大学开学日期是怎么回事呢？南京大学相信大家都很熟悉，但是南京大学开学日期是怎么回事呢，下面就让小编带大家一起了解吧。
-南京大学开学日期，其实就是南京大学开学日期公布了吗，大家可能会很惊讶南京大学怎么会开学日期呢？但事实就是这样，小编也感到非常惊讶。
-这就是关于南京大学开学日期的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！''')
+def yingxiaohao(main_body, event, in_fact='没什么'):
+    print('''{}{}是怎么回事呢？{}相信大家都很熟悉，但是{}{}是怎么回事呢，下面就让小编带大家一起了解吧。
+{}{}，其实就是{}，大家可能会很惊讶{}怎么会{}呢？但事实就是这样，小编也感到非常惊讶。
+这就是关于{}{}的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！'''.format(
+        main_body,
+        event,
+        main_body,
+        main_body,
+        event,
+        main_body,
+        event,
+        in_fact,
+        main_body,
+        event,
+        main_body,
+        event))
+
+
+if __name__ == '__main__':
+    main_body = str(input('主体：'))
+    event = str(input('事件：'))
+    in_fact = str(input('其实：'))
+    yingxiaohao(main_body, event, in_fact)
