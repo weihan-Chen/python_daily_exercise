@@ -6,5 +6,5 @@ def topn_dict(d, n):
     return nlargest(n, d, key=lambda k: d[k])
 
 
-# example
+# examples
 print(topn_dict({'a': 10, 'b': 8, 'c': 9, 'd': 10}, 3))
