@@ -21,7 +21,9 @@ people_group = dict.fromkeys(people_number, 0)
 
 # 随机将所有人放入不同的队伍
 cnt = 1
-summary = [0, ]
+summary = [
+    0,
+]
 i = 2
 while i <= group_summary:
     summary.append(0)
@@ -29,7 +31,7 @@ while i <= group_summary:
 while cnt <= people_summary:
     people_group[cnt] = num = random.randint(1, group_summary)
     summary[num - 1] += 1
-    if summary[num - 1] >= people_summary/group_summary+1:
+    if summary[num - 1] >= people_summary / group_summary + 1:
         summary[num - 1] -= 1
         continue
     cnt += 1
@@ -40,7 +42,10 @@ while i <= group_summary:
     print('第{}组:'.format(i))
     for group in people_group.values():
         if group == i:
-            print(list(people_group.keys())[list(people_group.values()).index(group)], end=', ')
-            people_group[list(people_group.keys())[list(people_group.values()).index(group)]] = 0
+            print(list(people_group.keys())[list(
+                people_group.values()).index(group)],
+                  end=', ')
+            people_group[list(people_group.keys())[list(
+                people_group.values()).index(group)]] = 0
     print('\n')
     i += 1

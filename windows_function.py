@@ -3,7 +3,8 @@ import numpy as np
 # import scipy.signal as sp
 import matplotlib.pyplot as plt
 
-nuttall_min3_coeff = np.array([0.4243801, 0.4973406, 0.0782793], dtype=np.float32)
+nuttall_min3_coeff = np.array([0.4243801, 0.4973406, 0.0782793],
+                              dtype=np.float32)
 
 
 def nuttall(M, coeff, sym):
